@@ -1,0 +1,332 @@
+/* basic css start here */
+*{
+    padding: 0ex;
+    margin: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+/* basic css ends here */
+/* common css start here */
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.raw{
+    display: flex;
+    flex-wrap: wrap;
+}
+.h-center{
+    align-items: center;
+}
+.w-center{
+    justify-content: center;
+}
+body{
+    font-family: var(--mainfont);
+}
+.btn{
+display: inline-block;
+padding: 20px 30px;
+background: #676CDB;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+color: #FFFFFF;
+transition: 0.3s;
+}
+.btn:hover{
+    color:rgb(16, 16, 53);
+}
+.p-blue{
+    font-family: var(--secondfont);
+font-style: normal;
+font-weight: 700;
+font-size: 100px;
+line-height: 120%;
+color: #676CDB;
+}
+:root{
+    --mainfont: 'Poppins', sans-serif;
+    --secondfont: 'Playfair Display', serif;
+    --primarycolor:#676CDB;
+    --bannerhight:744px;
+}
+/* common css ends here */
+
+/* nav bar starts here */
+nav{ 
+    position: absolute;
+    width: 100%;
+    top: 20px;
+}
+nav .logo{
+    width: 15%;
+    text-align: left;
+}
+nav .menu{
+    width: 70%;
+    text-align: center;
+}
+nav .contact-button{
+    width: 15%;
+    text-align: right;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+display: inline-block;
+padding: 15px 30px;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+color: #FFFFFF;
+margin-right: -5px;
+}
+/* nav bar ends here */
+
+/* banner part starts here  */
+#banner{
+    height: var(--bannerhight);
+    background-image: url(../img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#banner .raw{
+    height: var(--bannerhight);
+}
+#banner .bn-text{
+    width: 80%;
+    padding-left: 20px;
+}
+#banner .bn-text h1{
+font-weight: 700;
+font-size: 90px;
+line-height: 120%;
+font-family: var(--secondfont);
+color: #FFFFFF;
+}
+#banner .bn-text p{
+font-weight: 400;
+font-size: 20px;
+line-height: 180%;
+padding-right: 480px;
+margin: 15px 0px;
+color: rgba(255, 255, 255, 0.5);
+}
+#banner .bn-text p span{
+    color: #FFFFFF;
+}
+#banner .bn-text .last{
+    padding: 20px 20px;
+    background-color: transparent;
+    text-decoration:underline;
+}
+#banner .bn-text a span{
+    font-size: 20px;
+    margin: 8px;
+}
+/* banner part ends here  */
+
+/* logo part starts here */
+#logo{
+    padding: 60px 0px;
+    background-color: #000000;
+}
+#logo a:hover img{
+    border: 1px gray solid;
+}
+#logo .logo-peding{
+    margin-right: 150px ;
+}
+/* logo part ends here */
+
+/* experience starts here*/
+#experience{
+    padding: 120px 0px;
+    background-color: #222A36;
+}
+#experience .left-part{
+    width: 25%;
+}
+#experience .left-part h2{
+font-family: var(--secondfont);
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 180%;
+color: #FFFFFF;
+
+}
+#experience .right-part{
+    width: 75%;
+}
+#experience .right-part h2{
+font-weight: 700;
+font-size: 40px;
+line-height: 180%;
+text-align: center;
+color: #FFFFFF;
+}
+#experience .right-part .card{
+    width: calc(33.33% - 15px);
+    margin-top: 35px;
+    color: #222A36;
+    background-color :#C4C4C4;
+    padding: 175px 30px 40px;
+    transition: 0.5s;
+}
+#experience .right-part .card:hover{
+    background-color: #676CDB;
+    color: #FFFFFF;
+}
+#experience .right-part .card-de{
+    margin-left: 15px;
+}
+#experience .right-part .card a{
+    display: inline-block;
+    font-size: 30px;
+    color: #222A36;
+    margin-bottom: 15px;transition: 0.5s;
+}
+#experience .right-part .card:hover a{
+    color: #FFFFFF;
+}
+#experience .right-part .card h3{
+font-weight: 700;
+font-size: 20px;
+line-height: 120%;
+}
+/* experience ends here*/
+
+/*  jpker part starts here */
+#jukar-info{
+    padding: 102px;
+    background: rgba(34, 42, 54, 0.95);
+}
+#jukar-info .jukar-card{
+    width: 35%;
+}
+#jukar-info .jukar-text{
+    width: calc(50% - 65px);
+    margin-left: 15px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+#jukar-info .clints{
+    width: 15%;
+    
+}
+#jukar-info .jukar-card img{
+    width: 100%;
+}
+#jukar-info .jukar-text h2{
+font-family: var(--secondfont);
+font-weight: 700;
+font-size: 100px;
+line-height: 120%;
+color: #C4C4C4;
+}
+#jukar-info .jukar-text p{
+font-weight: 700;
+font-size: 20px;
+line-height: 180%;
+margin-top: -40px;
+color: #FFFFFF;
+}
+#jukar-info .jukar-text a{
+    display: inline-block;
+    color: var(--primarycolor);
+    font-size: 25px;
+    padding: 20px 0px ;
+    margin-right: 18px;
+}
+#jukar-info .clints h3{
+font-family: var(--secondfont);
+font-weight: 700;
+font-size: 30px;
+line-height: 120%;
+color: #FFFFFF;
+}
+#jukar-info .clints p{
+    font-size: 50px;
+    padding: 30px 0px;
+}
+/*  jpker part ends here */
+
+/* footer part starts here */
+#fotter{
+    padding: 123px 0px;
+    padding-bottom: 60px;
+    background: #000000;
+}
+#fotter .text-part{
+    width: 60%;
+    color: #FFFFFF;
+}
+#fotter .form-part{
+    width: 40%;
+}
+#fotter .text-part h2{
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+#fotter .text-part a{
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 13px 15px;
+}
+#fotter .form-part label{
+color: #FFFFFF;
+font-weight: 500;
+font-size: 30px;
+}
+#fotter .form-part input{
+    border: none;
+    margin: 10px 0px;
+    color: #FFFFFF;
+    font-size: 30px;
+    padding-top: 10px;
+    background-color: #000000;
+}
+#fotter .form-part .send a{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 120%; 
+    color: #676CDB;
+}
+#fotter .form-part button{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 120%; 
+    color: #676CDB;
+    background-color: transparent;
+    margin-right: 15px;
+}
+/* footer part ends here */
+
+/* copy right starts here */
+.copy{
+    padding: 23px 0px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+.copy p{
+font-weight: 700;
+font-size: 20px;
+line-height: 180%;
+letter-spacing: 0.3px;
+color: rgba(255, 255, 255, 0.5);
+}
+.copy span{
+color: #FFFFFF;
+}
+/* copy right starts ends*/
